@@ -1,13 +1,13 @@
 <?php
 
 namespace Canvas\Models;
-
+use App\User as AppUser;
 use Canvas\Canvas;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends AppUser
 {
     use SoftDeletes;
 
